@@ -63,14 +63,17 @@
                     <a href="#pricing" class="btn btn-secondary btn-lg">Compre agora</a>
                 </div>
                 <div class="col-md-5 text-center d-none d-md-block">
-                    <img class="img-fluid" src="/assets/ebook-cover.png" alt="capa do livro">
+                    <!-- tooltip -->
+                     <span class="tt" data-bs-placement="bottom" title="Capa do livro Net Ninja Pro">
+                        <img class="img-fluid" src="/assets/ebook-cover.png" alt="capa do livro">
+                     </span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- topicos -->
-    <section id="topics">
+    <section id="topics" class="bg-light">
         <div class="container-md">
             <div class="text-center">
                 <h2>Por dentro do livro...</h2>
@@ -146,7 +149,7 @@
     </section>
 
     <!-- lista de avaliacoes -->
-     <section id="reviews" class="bg-light">
+     <section id="reviews">
         <div class="container-lg">
             <div class="text-center">
                 <h2><i class="bi bi-stars"></i> Avaliações do Livro</h2>
@@ -210,7 +213,7 @@
      </section>
 
     <!-- formulário de contato -->
-    <section id="contact">
+    <section id="contact"  class="bg-light">
         <div class="container-lg">
             <div class="text-center">
                 <h2>Entre em contato</h2>
@@ -227,6 +230,12 @@
                                 <i class="bi bi-at"></i>
                             </span>
                             <input type="email" class="form-control" id="email" placeholder="e.g. mario@example.com">
+                            <!-- tooltip -->
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-placement="bottom" title="Digite seu endereço de e-mail">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
                         </div>
 
                         <label for="name" class="form-label">Name:</label>
@@ -268,7 +277,7 @@
 
 
     <!-- planos de preco -->
-    <section id="pricing" class="bg-light mt-5">
+    <section id="pricing" class="mt-5">
         <div class="container-lg">
             <div class="text-center">
                 <h2>Planos de preço</h2>
@@ -315,5 +324,11 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
 </body>
 </html>
