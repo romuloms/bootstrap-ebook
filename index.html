@@ -61,6 +61,8 @@
                     </h1>
                     <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <a href="#pricing" class="btn btn-secondary btn-lg">Compre agora</a>
+                    <!-- offcanvas -->
+                    <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Explore outros livros</a>
                 </div>
                 <div class="col-md-5 text-center d-none d-md-block">
                     <!-- tooltip -->
@@ -356,6 +358,16 @@
 
         </div>
     </section>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebar-label">Outros Livros</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad vero repellat aperiam rerum, id nemo libero error tempore cupiditate maiores veniam animi aut incidunt quis nulla? Odit id animi voluptas?</p>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
