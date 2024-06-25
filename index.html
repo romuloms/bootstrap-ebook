@@ -274,10 +274,44 @@
     </section>
 
     <!-- atualizacoes / gatilho do modal -->
+    <section>
+    <div class="container">
+        <div class="text-center">
+            <h2>Fique ligado</h2>
+            <p class="lead">Receba as últimas atualizações</p>
+        </div>
 
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <p class="text-muted my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, eaque saepe molestias sequi ducimus sunt neque sint laboriosam id aliquid officiis ipsum! Pariatur corporis sit expedita ipsam ducimus, cupiditate beatae?</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Registre-se</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- modal -->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Receba as últimas atualizações</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptas quaerat.</p>
+                    <label for="modal-email" class="fom-label">Seu e-mail:</label>
+                    <input type="email" class="form-control" id="modal-email" placeholder="mario@example.com">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- planos de preco -->
-    <section id="pricing" class="mt-5">
+    <section id="pricing" class="bg-light mt-5">
         <div class="container-lg">
             <div class="text-center">
                 <h2>Planos de preço</h2>
