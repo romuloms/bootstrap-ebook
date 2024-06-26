@@ -1,0 +1,19 @@
+// variáveis personalizadas (sobrescrevendo)
+$primary: #c29938;
+$light: #fbf5e5;
+
+// Como adicionar novas variáveis:
+// importar as funções e variáveis
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+// adicionar variáveis
+$custom-theme-colors: (
+    "altlight": #f2ebfa,
+    "altdark": #522192
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// importar bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss'
